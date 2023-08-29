@@ -1,2 +1,3 @@
-# SPMTest
-spm test
+# MetSPMTest
+
+A description of this package.
