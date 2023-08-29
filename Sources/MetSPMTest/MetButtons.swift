@@ -20,18 +20,21 @@ extension MetSPMTest {
 extension MetSPMTest.MetButtons {
     
     public struct BottomButton: View {
+        private var handler: () -> ()
         
-//        public var text: String = ""
+        public var text: String = ""
         
-        public init(text: String) {
-//            self.text = text
+        public init(text: String, handler: @escaping () -> ()) {
+            self.text = text
+            self.handler = handler
         }
         
         public var body: some View {
             Button() {
                 print("버튼 눌렀다")
+                handler()
             } label: {
-                Text("버튼텍스트")
+                Text(text)
             }
         }
         
