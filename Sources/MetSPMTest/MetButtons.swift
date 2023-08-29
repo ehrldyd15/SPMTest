@@ -21,9 +21,9 @@ extension MetSPMTest.MetButtons {
     
     public struct BottomButton: View {
         
-        public var text: String = ""
+//        public var text: String = ""
         
-        public init() {
+        public init(text: String) {
 //            self.text = text
         }
         
@@ -31,7 +31,7 @@ extension MetSPMTest.MetButtons {
             Button() {
                 print("버튼 눌렀다")
             } label: {
-                Text(text)
+                Text("버튼텍스트")
             }
         }
         
