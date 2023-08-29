@@ -1,0 +1,2 @@
+# SPMTest
+spm test
