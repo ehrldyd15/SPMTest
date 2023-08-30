@@ -42,7 +42,7 @@ extension MetSPMTest.MetButtons {
                 .foregroundColor(.white)
                 .background(.red)
 
-                Image("BG", bundle: Bundle.module2)
+                Image("BG")
                     .frame(width: 200, height: 300)
             }
         }
