@@ -23,7 +23,7 @@ let package = Package(
             name: "MetSPMTest",
             dependencies: [],
             resources: [
-                .process("Resources")
+                .process("BG")
             ]),
         .testTarget(
             name: "MetSPMTestTests",
