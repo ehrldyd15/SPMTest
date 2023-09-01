@@ -43,7 +43,7 @@ extension MetSPMTest.MetButtons {
                 .foregroundColor(.white)
                 .background(.red)
 
-                Image("BG", bundle: Bundle.module)
+                Image("BG", bundle: .module)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 300, height: 300)
