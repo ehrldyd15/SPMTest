@@ -42,6 +42,7 @@ extension MetSPMTest.MetButtons {
                         .foregroundColor(.white)
                         .background(.red)
                 }
+                .contentShape(Rectangle())
 
                 Image("BG", bundle: Bundle.module)
                     .resizable()
