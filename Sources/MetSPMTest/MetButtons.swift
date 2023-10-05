@@ -33,12 +33,9 @@ extension MetSPMTest.MetButtons {
         
         public var body: some View {
             VStack {
-                Button() {
+                Button(text) {
                     print("버튼 눌렀다")
                     handler()
-                } label: {
-                    Text(text)
-                        .frame(width: 200, height: 50)
                 }
                 .frame(width: 200, height: 50)
                 .foregroundColor(.white)
