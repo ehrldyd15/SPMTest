@@ -33,13 +33,15 @@ extension MetSPMTest.MetButtons {
         
         public var body: some View {
             VStack {
-                Button(text) {
+                Button() {
                     print("버튼 눌렀다")
                     handler()
+                } label: {
+                    Text(text)
+                        .frame(width: 200, height: 50)
+                        .foregroundColor(.white)
+                        .background(.red)
                 }
-                .frame(width: 200, height: 50)
-                .foregroundColor(.white)
-                .background(.red)
 
                 Image("BG", bundle: Bundle.module)
                     .resizable()
