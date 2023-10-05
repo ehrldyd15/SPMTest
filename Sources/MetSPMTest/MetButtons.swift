@@ -38,6 +38,7 @@ extension MetSPMTest.MetButtons {
                     handler()
                 } label: {
                     Text(text)
+                        .frame(width: 200, height: 50)
                 }
                 .frame(width: 200, height: 50)
                 .foregroundColor(.white)
