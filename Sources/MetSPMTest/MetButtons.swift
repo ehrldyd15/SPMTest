@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Lottie
 
 extension MetSPMTest {
     
@@ -24,7 +24,7 @@ extension MetSPMTest {
     
 }
 
-extension MetSPMTest.MetButtons {
+extension MetSPMTest.MetLottie {
     
     @available(macOS 12.0, *)
     @available(iOS 15.0, *)
@@ -32,7 +32,7 @@ extension MetSPMTest.MetButtons {
         
         public var body: some View {
             VStack {
-//                LotteView
+                
             }
         }
         
