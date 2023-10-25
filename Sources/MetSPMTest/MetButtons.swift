@@ -7,11 +7,34 @@
 
 import SwiftUI
 
+
 extension MetSPMTest {
     
     public struct MetButtons {
         
         public init() {}
+        
+    }
+    
+    public struct MetLottie {
+        
+        public init() {}
+        
+    }
+    
+}
+
+extension MetSPMTest.MetButtons {
+    
+    @available(macOS 12.0, *)
+    @available(iOS 15.0, *)
+    public struct MetLoading: View {
+        
+        public var body: some View {
+            VStack {
+//                LotteView
+            }
+        }
         
     }
     

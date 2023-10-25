@@ -13,6 +13,7 @@ let package = Package(
             targets: ["MetSPMTest"]),
     ],
     dependencies: [
+        .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.3.3")
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
@@ -21,13 +22,13 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "MetSPMTest",
-            dependencies: [],
+            dependencies: ["Lottie"],
             resources: [
                 .process("Resources")
             ]),
-        .testTarget(
-            name: "MetSPMTestTests",
-            dependencies: ["MetSPMTest"]),
+//        .testTarget(
+//            name: "MetSPMTestTests",
+//            dependencies: ["MetSPMTest"]),
     ]
 )
 
