@@ -12,7 +12,7 @@ let package = Package(
             targets: ["MetSPMTest"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/airbnb/lottie-ios.git", from: "4.3.3")
+        .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.3.3")
     ],
     targets: [
         .target(

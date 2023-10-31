@@ -73,7 +73,6 @@ extension MetSPMTest.MetButtons {
                     .frame(width: 300, height: 300)
             }
         }
-        
     }
     
 }
