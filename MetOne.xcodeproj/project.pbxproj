@@ -20,6 +20,9 @@
 		0085E2E02AF1DA0400F93651 /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085E2DF2AF1DA0400F93651 /* SplashViewController.storyboard */; };
 		0085E2E22AF1DA6000F93651 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085E2E12AF1DA6000F93651 /* MainViewController.swift */; };
 		0085E2E42AF1DA6A00F93651 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085E2E32AF1DA6A00F93651 /* MainViewController.storyboard */; };
+		0085E2EB2AF21C8700F93651 /* SubCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085E2EA2AF21C8700F93651 /* SubCoordinator.swift */; };
+		0085E2ED2AF21C9700F93651 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085E2EC2AF21C9700F93651 /* SubViewController.swift */; };
+		0085E2EF2AF21CA200F93651 /* SubViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085E2EE2AF21CA200F93651 /* SubViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		0085E2DF2AF1DA0400F93651 /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
 		0085E2E12AF1DA6000F93651 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		0085E2E32AF1DA6A00F93651 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		0085E2EA2AF21C8700F93651 /* SubCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCoordinator.swift; sourceTree = "<group>"; };
+		0085E2EC2AF21C9700F93651 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
+		0085E2EE2AF21CA200F93651 /* SubViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 				0077ED6C2AF0E7F000A9A2C6 /* App */,
 				0077ED6A2AF0E7E000A9A2C6 /* Splash */,
 				0077ED6B2AF0E7E900A9A2C6 /* Main */,
+				0085E2E72AF21B6300F93651 /* Sub */,
 				004C43EC2AEB89D600D175DE /* AppDelegate.swift */,
 				004C43EE2AEB89D600D175DE /* SceneDelegate.swift */,
 				004C43F22AEB89D600D175DE /* Main.storyboard */,
@@ -170,6 +177,16 @@
 				0077ED532AF0D3A400A9A2C6 /* AppCoordinator.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		0085E2E72AF21B6300F93651 /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				0085E2EA2AF21C8700F93651 /* SubCoordinator.swift */,
+				0085E2EC2AF21C9700F93651 /* SubViewController.swift */,
+				0085E2EE2AF21CA200F93651 /* SubViewController.storyboard */,
+			);
+			path = Sub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +278,7 @@
 				0085E2E02AF1DA0400F93651 /* SplashViewController.storyboard in Resources */,
 				004C43F92AEB89D800D175DE /* LaunchScreen.storyboard in Resources */,
 				004C43F62AEB89D800D175DE /* Assets.xcassets in Resources */,
+				0085E2EF2AF21CA200F93651 /* SubViewController.storyboard in Resources */,
 				004C43F42AEB89D600D175DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,6 +295,8 @@
 				0077ED542AF0D3A400A9A2C6 /* AppCoordinator.swift in Sources */,
 				004C43ED2AEB89D600D175DE /* AppDelegate.swift in Sources */,
 				0085E2DE2AF1D9F700F93651 /* SplashViewController.swift in Sources */,
+				0085E2EB2AF21C8700F93651 /* SubCoordinator.swift in Sources */,
+				0085E2ED2AF21C9700F93651 /* SubViewController.swift in Sources */,
 				0077ED652AF0D90300A9A2C6 /* SplashCoordinator.swift in Sources */,
 				004C43EF2AEB89D600D175DE /* SceneDelegate.swift in Sources */,
 			);

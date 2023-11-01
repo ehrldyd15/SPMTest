@@ -8,9 +8,14 @@
 import Foundation
 import UIKit
 
-class MainCoordinator: Coordinator {
+protocol MainCoordinatorDelegate {
+    func moveSubView(_ coordinator: MainCoordinator)
+}
+
+class MainCoordinator: Coordinator, MainViewControllerDelegate {
     
     var childCoordinators: [Coordinator] = []
+    var delegate: MainCoordinatorDelegate?
 
     private var navigationController: UINavigationController!
     
@@ -22,10 +27,16 @@ class MainCoordinator: Coordinator {
         let storyboard = UIStoryboard(name: "MainViewController", bundle: nil)
         
         if let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") as? MainViewController {
-            navigationController.pushViewController(vc, animated: true)
+            vc.delegate = self
+            
+            navigationController.pushViewController(vc, animated: false)
         } else {
             print("Could not MainViewController: MainViewController")
         }
+    }
+    
+    func moveSubView() {
+        self.delegate?.moveSubView(self)
     }
     
 }
