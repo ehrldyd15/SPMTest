@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002CFAB92AFB3E6200B6258A /* MetUIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002CFAB82AFB3E6200B6258A /* MetUIApplication.swift */; };
+		002CFAC02AFB3F8F00B6258A /* MetUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 002CFABF2AFB3F8F00B6258A /* MetUIColor.swift */; };
 		004C442E2AEB8B6D00D175DE /* MetFoundation.docc in Sources */ = {isa = PBXBuildFile; fileRef = 004C442D2AEB8B6D00D175DE /* MetFoundation.docc */; };
 		004C442F2AEB8B6D00D175DE /* MetFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 004C442C2AEB8B6D00D175DE /* MetFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		004C443C2AEB8B9700D175DE /* MetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C443B2AEB8B9700D175DE /* MetBundle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002CFAB82AFB3E6200B6258A /* MetUIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetUIApplication.swift; sourceTree = "<group>"; };
+		002CFABF2AFB3F8F00B6258A /* MetUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetUIColor.swift; sourceTree = "<group>"; };
 		004C44292AEB8B6D00D175DE /* MetFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MetFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		004C442C2AEB8B6D00D175DE /* MetFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetFoundation.h; sourceTree = "<group>"; };
 		004C442D2AEB8B6D00D175DE /* MetFoundation.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MetFoundation.docc; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 			children = (
 				004C442C2AEB8B6D00D175DE /* MetFoundation.h */,
 				004C443B2AEB8B9700D175DE /* MetBundle.swift */,
+				002CFAB82AFB3E6200B6258A /* MetUIApplication.swift */,
+				002CFABF2AFB3F8F00B6258A /* MetUIColor.swift */,
 				004C442D2AEB8B6D00D175DE /* MetFoundation.docc */,
 			);
 			path = MetFoundation;
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				004C442E2AEB8B6D00D175DE /* MetFoundation.docc in Sources */,
+				002CFAB92AFB3E6200B6258A /* MetUIApplication.swift in Sources */,
+				002CFAC02AFB3F8F00B6258A /* MetUIColor.swift in Sources */,
 				004C443C2AEB8B9700D175DE /* MetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

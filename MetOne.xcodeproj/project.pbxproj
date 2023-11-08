@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002CFAC12AFB448E00B6258A /* NFilterFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 002CF9B52AFB22E400B6258A /* NFilterFeature.framework */; };
+		002CFAC22AFB448E00B6258A /* NFilterFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 002CF9B52AFB22E400B6258A /* NFilterFeature.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		004C43ED2AEB89D600D175DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C43EC2AEB89D600D175DE /* AppDelegate.swift */; };
 		004C43EF2AEB89D600D175DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004C43EE2AEB89D600D175DE /* SceneDelegate.swift */; };
 		004C43F42AEB89D600D175DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 004C43F22AEB89D600D175DE /* Main.storyboard */; };
@@ -16,6 +18,7 @@
 		0077ED542AF0D3A400A9A2C6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077ED532AF0D3A400A9A2C6 /* AppCoordinator.swift */; };
 		0077ED652AF0D90300A9A2C6 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077ED642AF0D90300A9A2C6 /* SplashCoordinator.swift */; };
 		0077ED672AF0DF4D00A9A2C6 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0077ED662AF0DF4D00A9A2C6 /* MainCoordinator.swift */; };
+		008189DF2AFB1D7F0054C460 /* NFilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008189DE2AFB1D7F0054C460 /* NFilterModel.swift */; };
 		0085E2DE2AF1D9F700F93651 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085E2DD2AF1D9F700F93651 /* SplashViewController.swift */; };
 		0085E2E02AF1DA0400F93651 /* SplashViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0085E2DF2AF1DA0400F93651 /* SplashViewController.storyboard */; };
 		0085E2E22AF1DA6000F93651 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085E2E12AF1DA6000F93651 /* MainViewController.swift */; };
@@ -26,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		002CF9B42AFB22E400B6258A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 002CF9B02AFB22E400B6258A /* NFilterFeature.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 002CF9A42AFB22D800B6258A;
+			remoteInfo = NFilterFeature;
+		};
 		004C44392AEB8B7E00D175DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 004C44352AEB8B7E00D175DE /* MetFoundation.xcodeproj */;
@@ -42,7 +52,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		002CFAC32AFB448E00B6258A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				002CFAC22AFB448E00B6258A /* NFilterFeature.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		002CF9B02AFB22E400B6258A /* NFilterFeature.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NFilterFeature.xcodeproj; path = NFilterFeature/NFilterFeature.xcodeproj; sourceTree = "<group>"; };
 		004C43E92AEB89D600D175DE /* MetOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		004C43EC2AEB89D600D175DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		004C43EE2AEB89D600D175DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +80,7 @@
 		0077ED532AF0D3A400A9A2C6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		0077ED642AF0D90300A9A2C6 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
 		0077ED662AF0DF4D00A9A2C6 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		008189DE2AFB1D7F0054C460 /* NFilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFilterModel.swift; sourceTree = "<group>"; };
 		0085E2DD2AF1D9F700F93651 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		0085E2DF2AF1DA0400F93651 /* SplashViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashViewController.storyboard; sourceTree = "<group>"; };
 		0085E2E12AF1DA6000F93651 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				002CFAC12AFB448E00B6258A /* NFilterFeature.framework in Frameworks */,
 				004C44872AEB90AF00D175DE /* LoadingFeature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002CF9B12AFB22E400B6258A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				002CF9B52AFB22E400B6258A /* NFilterFeature.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		004C43E02AEB89D600D175DE = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +158,7 @@
 		004C441D2AEB8B2400D175DE /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				002CF9B02AFB22E400B6258A /* NFilterFeature.xcodeproj */,
 				004C447B2AEB904B00D175DE /* LoadingFeature.xcodeproj */,
 			);
 			path = Features;
@@ -164,6 +200,7 @@
 		0077ED6B2AF0E7E900A9A2C6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				008189DD2AFB1D680054C460 /* Models */,
 				0077ED662AF0DF4D00A9A2C6 /* MainCoordinator.swift */,
 				0085E2E12AF1DA6000F93651 /* MainViewController.swift */,
 				0085E2E32AF1DA6A00F93651 /* MainViewController.storyboard */,
@@ -177,6 +214,14 @@
 				0077ED532AF0D3A400A9A2C6 /* AppCoordinator.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		008189DD2AFB1D680054C460 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				008189DE2AFB1D7F0054C460 /* NFilterModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0085E2E72AF21B6300F93651 /* Sub */ = {
@@ -199,6 +244,7 @@
 				004C43E52AEB89D600D175DE /* Sources */,
 				004C43E62AEB89D600D175DE /* Frameworks */,
 				004C43E72AEB89D600D175DE /* Resources */,
+				002CFAC32AFB448E00B6258A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +290,10 @@
 					ProductGroup = 004C44362AEB8B7E00D175DE /* Products */;
 					ProjectRef = 004C44352AEB8B7E00D175DE /* MetFoundation.xcodeproj */;
 				},
+				{
+					ProductGroup = 002CF9B12AFB22E400B6258A /* Products */;
+					ProjectRef = 002CF9B02AFB22E400B6258A /* NFilterFeature.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -253,6 +303,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		002CF9B52AFB22E400B6258A /* NFilterFeature.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NFilterFeature.framework;
+			remoteRef = 002CF9B42AFB22E400B6258A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		004C443A2AEB8B7E00D175DE /* MetFoundation.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -296,6 +353,7 @@
 				004C43ED2AEB89D600D175DE /* AppDelegate.swift in Sources */,
 				0085E2DE2AF1D9F700F93651 /* SplashViewController.swift in Sources */,
 				0085E2EB2AF21C8700F93651 /* SubCoordinator.swift in Sources */,
+				008189DF2AFB1D7F0054C460 /* NFilterModel.swift in Sources */,
 				0085E2ED2AF21C9700F93651 /* SubViewController.swift in Sources */,
 				0077ED652AF0D90300A9A2C6 /* SplashCoordinator.swift in Sources */,
 				004C43EF2AEB89D600D175DE /* SceneDelegate.swift in Sources */,
