@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import NFilterFeature
+import LoadingFeature
+import Combine
 
 protocol MainViewControllerDelegate {
     func moveSubView()
@@ -20,7 +21,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         print("Hello main view controller")
-
+        
     }
     
     @IBAction func moveSubView(_ sender: Any) {
