@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "foundationfeature",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ehrldyd15/FoundationFeature.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "346565465201b9029698bc8ccca345504b529623"
+      }
+    },
+    {
+      "identity" : "lottie-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/airbnb/lottie-spm.git",
+      "state" : {
+        "revision" : "3e7eb8281ff9ac67e64a3a58a80c0aa9fa388b04",
+        "version" : "4.3.3"
+      }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
+    },
+    {
+      "identity" : "uifeature",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ehrldyd15/UIFeature.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0235170f22a1bdafd9bb2ab9731720272704e848"
+      }
+    }
+  ],
+  "version" : 2
+}
