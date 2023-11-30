@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		009212632B171452001AF53C /* DJCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212622B171452001AF53C /* DJCollectionViewCell.swift */; };
-		009212652B181C92001AF53C /* SubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212642B181C92001AF53C /* SubViewModel.swift */; };
 		009212672B181CC7001AF53C /* SubViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212662B181CC7001AF53C /* SubViewControllerViewModel.swift */; };
 		0092126A2B184304001AF53C /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212692B184304001AF53C /* ThirdCoordinator.swift */; };
 		0092126C2B184322001AF53C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0092126B2B184322001AF53C /* ThirdViewController.swift */; };
+		0092126F2B184A9D001AF53C /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0092126E2B184A9D001AF53C /* ClockModel.swift */; };
+		009212712B186264001AF53C /* ThirdViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212702B186264001AF53C /* ThirdViewControllerViewModel.swift */; };
+		009212732B1870CF001AF53C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212722B1870CF001AF53C /* Observable.swift */; };
 		00C348802B10674900B13033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3487F2B10674900B13033 /* AppDelegate.swift */; };
 		00C348822B10674900B13033 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C348812B10674900B13033 /* SceneDelegate.swift */; };
 		00C348892B10674A00B13033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C348882B10674A00B13033 /* Assets.xcassets */; };
@@ -44,10 +46,12 @@
 
 /* Begin PBXFileReference section */
 		009212622B171452001AF53C /* DJCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJCollectionViewCell.swift; sourceTree = "<group>"; };
-		009212642B181C92001AF53C /* SubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewModel.swift; sourceTree = "<group>"; };
 		009212662B181CC7001AF53C /* SubViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewControllerViewModel.swift; sourceTree = "<group>"; };
 		009212692B184304001AF53C /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
 		0092126B2B184322001AF53C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		0092126E2B184A9D001AF53C /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
+		009212702B186264001AF53C /* ThirdViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewControllerViewModel.swift; sourceTree = "<group>"; };
+		009212722B1870CF001AF53C /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		00C3487C2B10674900B13033 /* MetOneSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetOneSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C3487F2B10674900B13033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C348812B10674900B13033 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,8 +95,19 @@
 			children = (
 				009212692B184304001AF53C /* ThirdCoordinator.swift */,
 				0092126B2B184322001AF53C /* ThirdViewController.swift */,
+				009212702B186264001AF53C /* ThirdViewControllerViewModel.swift */,
+				009212722B1870CF001AF53C /* Observable.swift */,
+				0092126D2B184A8D001AF53C /* Models */,
 			);
 			path = Third;
+			sourceTree = "<group>";
+		};
+		0092126D2B184A8D001AF53C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0092126E2B184A9D001AF53C /* ClockModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		00C348732B10674900B13033 = {
@@ -149,7 +164,6 @@
 				00C348A22B10682100B13033 /* SubCoordinator.swift */,
 				00C348A42B10683000B13033 /* SubViewController.swift */,
 				009212662B181CC7001AF53C /* SubViewControllerViewModel.swift */,
-				009212642B181C92001AF53C /* SubViewModel.swift */,
 				009212612B171439001AF53C /* Cells */,
 			);
 			path = Sub;
@@ -264,8 +278,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009212732B1870CF001AF53C /* Observable.swift in Sources */,
 				009212672B181CC7001AF53C /* SubViewControllerViewModel.swift in Sources */,
 				009212632B171452001AF53C /* DJCollectionViewCell.swift in Sources */,
+				0092126F2B184A9D001AF53C /* ClockModel.swift in Sources */,
 				0092126A2B184304001AF53C /* ThirdCoordinator.swift in Sources */,
 				00C348A12B10681400B13033 /* MainViewController.swift in Sources */,
 				00C348992B1067D900B13033 /* AppCoordinator.swift in Sources */,
@@ -275,9 +291,9 @@
 				00C348A32B10682100B13033 /* SubCoordinator.swift in Sources */,
 				00C348A52B10683000B13033 /* SubViewController.swift in Sources */,
 				0092126C2B184322001AF53C /* ThirdViewController.swift in Sources */,
+				009212712B186264001AF53C /* ThirdViewControllerViewModel.swift in Sources */,
 				00C348822B10674900B13033 /* SceneDelegate.swift in Sources */,
 				00C3489D2B1067FE00B13033 /* SplashViewController.swift in Sources */,
-				009212652B181C92001AF53C /* SubViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
