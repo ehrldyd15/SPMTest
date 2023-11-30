@@ -10,6 +10,7 @@ import UIKit
 
 protocol MainCoordinatorDelegate {
     func moveSubView(_ coordinator: MainCoordinator)
+    func moveThirdView(_ coordinator: MainCoordinator)
 }
 
 class MainCoordinator: Coordinator, MainViewControllerDelegate {
@@ -21,6 +22,7 @@ class MainCoordinator: Coordinator, MainViewControllerDelegate {
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+        self.navigationController.isNavigationBarHidden = true
     }
     
     func start() {
@@ -32,6 +34,10 @@ class MainCoordinator: Coordinator, MainViewControllerDelegate {
     
     func moveSubView() {
         self.delegate?.moveSubView(self)
+    }
+    
+    func moveThirdView() {
+        self.delegate?.moveThirdView(self)
     }
     
 }

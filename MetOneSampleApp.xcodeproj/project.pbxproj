@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009212632B171452001AF53C /* DJCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212622B171452001AF53C /* DJCollectionViewCell.swift */; };
+		009212652B181C92001AF53C /* SubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212642B181C92001AF53C /* SubViewModel.swift */; };
+		009212672B181CC7001AF53C /* SubViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212662B181CC7001AF53C /* SubViewControllerViewModel.swift */; };
+		0092126A2B184304001AF53C /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009212692B184304001AF53C /* ThirdCoordinator.swift */; };
+		0092126C2B184322001AF53C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0092126B2B184322001AF53C /* ThirdViewController.swift */; };
 		00C348802B10674900B13033 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3487F2B10674900B13033 /* AppDelegate.swift */; };
 		00C348822B10674900B13033 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C348812B10674900B13033 /* SceneDelegate.swift */; };
 		00C348892B10674A00B13033 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C348882B10674A00B13033 /* Assets.xcassets */; };
 		00C3488C2B10674A00B13033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C3488A2B10674A00B13033 /* LaunchScreen.storyboard */; };
 		00C348952B1067BE00B13033 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 00C348942B1067BE00B13033 /* SnapKit */; };
-		00C348972B1067BE00B13033 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 00C348962B1067BE00B13033 /* SnapKit-Dynamic */; };
 		00C348992B1067D900B13033 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C348982B1067D900B13033 /* AppCoordinator.swift */; };
 		00C3489B2B1067F100B13033 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3489A2B1067F100B13033 /* SplashCoordinator.swift */; };
 		00C3489D2B1067FE00B13033 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C3489C2B1067FE00B13033 /* SplashViewController.swift */; };
@@ -25,7 +29,25 @@
 		00C3498D2B147E5800B13033 /* MetUIFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 00C3498C2B147E5800B13033 /* MetUIFeature */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		00C349922B15C5C100B13033 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		009212622B171452001AF53C /* DJCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DJCollectionViewCell.swift; sourceTree = "<group>"; };
+		009212642B181C92001AF53C /* SubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewModel.swift; sourceTree = "<group>"; };
+		009212662B181CC7001AF53C /* SubViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewControllerViewModel.swift; sourceTree = "<group>"; };
+		009212692B184304001AF53C /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
+		0092126B2B184322001AF53C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		00C3487C2B10674900B13033 /* MetOneSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetOneSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C3487F2B10674900B13033 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00C348812B10674900B13033 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,13 +72,29 @@
 				00C3498B2B147E5800B13033 /* LoadingView in Frameworks */,
 				00C349882B147E4900B13033 /* MetFoundation in Frameworks */,
 				00C348952B1067BE00B13033 /* SnapKit in Frameworks */,
-				00C348972B1067BE00B13033 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		009212612B171439001AF53C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				009212622B171452001AF53C /* DJCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		009212682B1842E5001AF53C /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				009212692B184304001AF53C /* ThirdCoordinator.swift */,
+				0092126B2B184322001AF53C /* ThirdViewController.swift */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
 		00C348732B10674900B13033 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +138,7 @@
 				00C348BB2B10694000B13033 /* Splash */,
 				00C348BA2B10693B00B13033 /* Main */,
 				00C348B92B10693500B13033 /* Sub */,
+				009212682B1842E5001AF53C /* Third */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -109,6 +148,9 @@
 			children = (
 				00C348A22B10682100B13033 /* SubCoordinator.swift */,
 				00C348A42B10683000B13033 /* SubViewController.swift */,
+				009212662B181CC7001AF53C /* SubViewControllerViewModel.swift */,
+				009212642B181C92001AF53C /* SubViewModel.swift */,
+				009212612B171439001AF53C /* Cells */,
 			);
 			path = Sub;
 			sourceTree = "<group>";
@@ -150,6 +192,7 @@
 				00C348782B10674900B13033 /* Sources */,
 				00C348792B10674900B13033 /* Frameworks */,
 				00C3487A2B10674900B13033 /* Resources */,
+				00C349922B15C5C100B13033 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,7 +201,6 @@
 			name = MetOneSampleApp;
 			packageProductDependencies = (
 				00C348942B1067BE00B13033 /* SnapKit */,
-				00C348962B1067BE00B13033 /* SnapKit-Dynamic */,
 				00C349872B147E4900B13033 /* MetFoundation */,
 				00C3498A2B147E5800B13033 /* LoadingView */,
 				00C3498C2B147E5800B13033 /* MetUIFeature */,
@@ -222,6 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009212672B181CC7001AF53C /* SubViewControllerViewModel.swift in Sources */,
+				009212632B171452001AF53C /* DJCollectionViewCell.swift in Sources */,
+				0092126A2B184304001AF53C /* ThirdCoordinator.swift in Sources */,
 				00C348A12B10681400B13033 /* MainViewController.swift in Sources */,
 				00C348992B1067D900B13033 /* AppCoordinator.swift in Sources */,
 				00C3489F2B10680800B13033 /* MainCoordinator.swift in Sources */,
@@ -229,8 +274,10 @@
 				00C348802B10674900B13033 /* AppDelegate.swift in Sources */,
 				00C348A32B10682100B13033 /* SubCoordinator.swift in Sources */,
 				00C348A52B10683000B13033 /* SubViewController.swift in Sources */,
+				0092126C2B184322001AF53C /* ThirdViewController.swift in Sources */,
 				00C348822B10674900B13033 /* SceneDelegate.swift in Sources */,
 				00C3489D2B1067FE00B13033 /* SplashViewController.swift in Sources */,
+				009212652B181C92001AF53C /* SubViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +421,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N683GJ5HAT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MetOneSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -386,7 +433,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MetOneSampleApp.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metlife.korea.internal.quickwin.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -401,7 +448,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N683GJ5HAT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MetOneSampleApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -413,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MetOneSampleApp.www;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metlife.korea.internal.quickwin.dev;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -476,11 +523,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 00C348932B1067BE00B13033 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
-		};
-		00C348962B1067BE00B13033 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 00C348932B1067BE00B13033 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
 		};
 		00C349872B147E4900B13033 /* MetFoundation */ = {
 			isa = XCSwiftPackageProductDependency;

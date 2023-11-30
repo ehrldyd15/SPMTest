@@ -1,14 +1,14 @@
 //
-//  SubCoordinator.swift
+//  ThirdCoordinator.swift
 //  MetOneSampleApp
 //
-//  Created by Do Kiyong on 11/24/23.
+//  Created by Do Kiyong on 11/30/23.
 //
 
 import Foundation
 import UIKit
 
-class SubCoordinator: Coordinator {
+class ThirdCoordinator: Coordinator {
     
     var childCoordinators: [Coordinator] = []
 
@@ -20,9 +20,8 @@ class SubCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = SubViewController()
+        let viewController = ThirdViewController()
         self.navigationController?.pushViewController(viewController, animated: false)
     }
     
 }
-
