@@ -5,12 +5,39 @@
 //  Created by Do Kiyong on 11/30/23.
 //
 
+import Combine
+import Foundation
+
 class SubViewControllerViewModel {
     
-    var dj = [""]
+    @Published var dj: [DJ] = []
     
     init() {
-        dj = ["Zedd", "Alan Walker", "David Guetta", "Avicii", "Marshmello", "Steve Aoki", "R3HAB", "Armin van Buuren", "Skrillex", "Illenium", "The Chainsmokers", "Don Diablo", "Afrojack", "Tiesto", "KSHMR", "DJ Snake", "Kygo", "Galantis", "Major Lazer", "Vicetone"]
+        dj = [DJ(name: "DKY"),
+              DJ(name: "DKY2"),
+              DJ(name: "DKY3"),
+              DJ(name: "DKY4"),
+              DJ(name: "DKY5"),
+              DJ(name: "DKY6"),
+              DJ(name: "DKY7"),
+              DJ(name: "DKY8"),
+              DJ(name: "DKY9"),
+              DJ(name: "DKY10"),
+        ]
+        
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
+            self.dj = [DJ(name: "A"),
+                       DJ(name: "A"),
+                       DJ(name: "C"),
+                       DJ(name: "C"),
+                       DJ(name: "C"),
+                       DJ(name: "E"),
+                       DJ(name: "E"),
+                       DJ(name: "E"),
+                       DJ(name: "I"),
+                       DJ(name: "J"),
+            ]
+        }
     }
     
 }

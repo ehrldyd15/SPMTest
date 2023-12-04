@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Combine
 
 class SubViewController: UIViewController {
     
@@ -40,9 +41,12 @@ class SubViewController: UIViewController {
         return isActive && isSearchBarHasText
     }
 
-    var dataSource: UICollectionViewDiffableDataSource<Section, String>!
+    var dataSource: UICollectionViewDiffableDataSource<Section, DJ>!
     
     private var viewModel = SubViewControllerViewModel()
+    private var cancellables: Set<AnyCancellable> = []
+    
+    private var djList: [DJ] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +58,7 @@ class SubViewController: UIViewController {
         setViews()
     
         self.setupDataSource()
-        self.performQuery(with: nil)
+        self.setBind()
     
     }
     
@@ -78,6 +82,18 @@ class SubViewController: UIViewController {
     
     func setViewStyle() {
         self.collectionView.collectionViewLayout = self.createCollectionViewLayout()
+    }
+    
+    func setBind() {
+        viewModel.$dj
+            .sink { completion in
+                print("completion: ", completion)
+            } receiveValue: { value in
+                print("value: ", value)
+                self.djList = value
+                
+                self.performQuery(with: nil)
+            }.store(in: &cancellables)
     }
     
     func createSearchController() {
@@ -116,9 +132,9 @@ class SubViewController: UIViewController {
         self.collectionView.register(DJCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
         
         self.dataSource =
-            UICollectionViewDiffableDataSource<Section, String>(collectionView: self.collectionView) { (collectionView, indexPath, dj) -> UICollectionViewCell? in
+            UICollectionViewDiffableDataSource<Section, DJ>(collectionView: self.collectionView) { (collectionView, indexPath, dj) -> UICollectionViewCell? in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as? DJCollectionViewCell else { preconditionFailure() }
-            cell.configure(text: dj)
+                cell.configure(text: dj.name)
                 
             return cell
         }
@@ -138,9 +154,9 @@ class SubViewController: UIViewController {
     }
 
     func performQuery(with filter: String?) {
-        let filtered = viewModel.dj.filter { $0.hasPrefix(filter ?? "") }
-
-        var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
+        let filtered = self.djList.filter { $0.name.hasPrefix(filter ?? "") }
+        
+        var snapshot = NSDiffableDataSourceSnapshot<Section, DJ>()
         snapshot.appendSections([.main])
         snapshot.appendItems(filtered)
         self.dataSource.apply(snapshot, animatingDifferences: true)
