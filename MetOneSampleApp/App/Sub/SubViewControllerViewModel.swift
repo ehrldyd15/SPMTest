@@ -25,7 +25,7 @@ class SubViewControllerViewModel {
               DJ(name: "DKY10"),
         ]
         
-        Timer.scheduledTimer(withTimeInterval: 3, repeats: true) { _ in
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { _ in
             self.dj = [DJ(name: "A"),
                        DJ(name: "A"),
                        DJ(name: "C"),
