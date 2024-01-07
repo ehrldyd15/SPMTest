@@ -162,7 +162,6 @@
 			children = (
 				00C348BB2B10694000B13033 /* Splash */,
 				00C348BA2B10693B00B13033 /* Main */,
-				00C348B92B10693500B13033 /* Sub */,
 				009212682B1842E5001AF53C /* Third */,
 			);
 			path = App;
@@ -185,6 +184,7 @@
 			children = (
 				00C3489E2B10680800B13033 /* MainCoordinator.swift */,
 				00C348A02B10681400B13033 /* MainViewController.swift */,
+				00C348B92B10693500B13033 /* Sub */,
 			);
 			path = Main;
 			sourceTree = "<group>";
